@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+}
+
+* {
+    list-style: none;
+    font-family: "Open Sans", sans-serif;
+    /* font-weight: 700; */
+    text-decoration: none;
+}
+
+/* навигационная панель */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(109, 187, 255);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    font-weight: 700;
+    height: 74px;
+    z-index: 999; /* Позиционируем панель выше всех остальных элементов */
+}
+
+.nav-conteiner {
+    margin: 0 auto;
+    padding: 0px 100px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.header-logo>a>img {
+    max-width: 225px;
+}
+
+.catalog {
+    position: relative;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    width: 180px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 22px;
+    font-size: 22px;
+    display: block;
+    
+    transition: all 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(45, 157, 255);
+    background-color: #eaf1fa;
+}
+
+nav ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    display: none;
+}
+
+nav ul li ul li {
+    width: 100%;
+    background-color: rgb(109, 187, 255);
+}
+
+nav ul li:hover > ul {
+    display: initial;
+}
+
+.search-form {
+    border: 2px solid grey;
+    display: inline-flex;
+    padding: 9px 15px;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+}
+.search-form__txt {
+    border: none;
+    width: 400px;
+    outline: none;
+    font-size: 16px;
+    background-color: transparent;
+}
+.search-form__button {
+    border: none;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 3px;
+}
+.search-form__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 24px;
+    cursor: pointer;
+}
+
+.cart>a>img {
+    max-width: 28px;
+
+    transition: 0.2s ease;
+}
+
+.cart>a>img:hover {
+    scale: 1.1;
+}
+
+
+/* товары */
+.conteiner {
+    margin: 0px auto;
+}
+
+.conteiner h2 {
+    margin-bottom: 30px;
+    padding: 0px 100px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+
+.product {
+    max-width: 225px;
+    margin-bottom: 30px;
+}
+
+.image-prod {
+    margin-bottom: 10px;
+}
+.image-prod a img{
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 7px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+.info h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 0;
+    height: 89px;
+}
+
+.rating {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.rating li {
+    display: inline-block;
+    color: #ffc808;
+}
+
+.info-price {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.add-to-cart {
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(109, 187, 255);
+    border-radius: 10px;
+
+    transition: background-color 0.2s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #eaf1fa;
+}
+
+.add-to-cart img {
+    max-width: 20px;
+}
+
+main>h1 {
+    margin: 100px 0px 50px 0px;
+    padding: 0px 100px;
+}
+
+/* Нижняя панель */
+footer {
+    background-color: rgb(232, 245, 255);
+    color: #505050;
+    padding: 20px 100px;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-column {
+    text-align: left;
+    max-width: 540px;
+}
+
+.footer-description {
+    margin-bottom: 20px;
+}
+
+.footer-description p {
+    margin: 9px 0;
+}
+
+.logo {
+    width: 32px;
+    color: #505050;
+    justify-content: space-between;
+
+    transition: scale 0.2s ease;
+}
+
+.logo:hover {
+    scale: 1.2;
+}
+
+.footer-links {
+    text-align: right;
+}
+
+.footer-links a {
+    color: #505050;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.rights {
+    text-align: center;
+    font-size: 14px;
+}

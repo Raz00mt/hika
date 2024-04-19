@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <!-- иконка вкладки -->
+    <link rel="shortcut icon" href="static\images\logomini.png" type="image/x-icon">
+    <!-- поключение к файлу css  -->
+    <link rel="stylesheet" href="static/styles/style-payment.css">
+    <!-- подключение к фонту Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="nav-conteiner">
+
+                <div class="header-logo">
+                    <a href="index.html">
+                        <img src="static\images\logo1.svg" alt="">
+                    </a>
+                </div>
+
+                <nav class="catalog">
+                    <ul>
+                        <li><a class="catalog-item" href="#">Каталог</a>
+                            <ul class="catalog-menu">
+                                <li><a href="pagebook.html">Книги</a></li>
+                                <li><a href="pagecomics.html">Комиксы</a></li>
+                                <li><a href="pagemanga.html">Манга</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            <div class="search-form">
+                <input class="search-form__txt" type="text" placeholder="Что бы почитать?">
+                <button class="search-form__button"> <img class="search-form__icon"
+                        src="static\images\free-icon-font-search-3917132.svg" alt=""></button>
+            </div>
+
+            <div class="cart">
+                <a href="cart.html">
+                    <img src="static\images\free-icon-font-shopping-cart-3916598.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+        <div class="payment-container">
+            <div class="card-image">
+                <div class="number"><input type="text" maxlength="16" placeholder="Введите номер карты"></div>
+                <div class="card-info">
+                    <input type="text" maxlength="5" pattern="**/**" placeholder="Срок">
+                    <input type="text" maxlength="3" placeholder="SVV">
+                </div>
+            </div>
+            <div class="payment-form">
+                <input type="text" placeholder="Введите сумму">
+                <a href="hehe.html"><button>Оплатить</button></a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

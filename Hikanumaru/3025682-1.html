@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikanumaru</title>
+    <!-- иконка вкладки -->
+    <link rel="shortcut icon" href="static\images\logomini.png" type="image/x-icon">
+    <!-- поключение к файлу css  -->
+    <link rel="stylesheet" href="static/styles/style-productpage.css">
+    <!-- подключение к фонту Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-conteiner">
+
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="static\images\logo1.svg" alt="">
+                </a>
+            </div>
+
+            <nav class="catalog">
+                <ul>
+                    <li><a class="catalog-item" href="#">Каталог</a>
+                        <ul class="catalog-menu">
+                            <li><a href="pagebook.html">Книги</a></li>
+                            <li><a href="pagecomics.html">Комиксы</a></li>
+                            <li><a href="pagemanga.html">Манга</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="search-form">
+                <input class="search-form__txt" type="text" placeholder="Что бы почитать?">
+                <button class="search-form__button"> <img class="search-form__icon"
+                        src="static\images\free-icon-font-search-3917132.svg" alt=""></button>
+            </div>
+
+            <div class="cart">
+                <a href="cart.html">
+                    <img src="static\images\free-icon-font-shopping-cart-3916598.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <div class="conteiner">
+            <div class="main-photo">
+                <img src="static\images\3025682-1.jpg" alt="">
+            </div>
+            <!-- /.main-photo -->
+
+            <div class="main-details">
+                <!-- <span class="main-details-vendor">#83754385</span> -->
+                <h1 class="main-details-title">Голубой период. Том 2
+                </h1>
+                <p class="main-details-text">Старшеклассник Ятора Ягути влюбился в живопись и теперь мечтает поступить в
+                    художественный вуз. Всю жизнь он подходил к отношениям и учёбе как будто к списку минимальных
+                    требований и довольствовался тем, что имел. Но разгоревшаяся страсть перевернула его жизнь с ног на
+                    голову.</p>
+
+                <div class="main-details-price">
+                    <span class="main-details-price-price">711<small>₽</small></span>
+
+                    <div class="main-details-price-action">
+                        <a href="payment.html"><button>Купить</button></a>
+                    </div>
+                    <!-- /.main-details-price-action -->
+
+                    <div class="main-details-price-reviews">
+                        <ul class="rating">
+                            <li><ion-icon name="star"></ion-icon></li>
+                            <li><ion-icon name="star"></ion-icon></li>
+                            <li><ion-icon name="star"></ion-icon></li>
+                            <li><ion-icon name="star"></ion-icon></li>
+                            <li><ion-icon name="star"></ion-icon></li>
+                        </ul>
+
+                        <a href="#" class="main-details-price-reviews-link">7 reviews</a>
+                    </div>
+                    <!-- /.main-details-price-reviews -->
+                </div>
+                <!-- /.main-details-price -->
+            </div>
+            <!-- /.main-details -->
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="columns">
+            <div class="left-column">
+                <div class="footer-description">
+                    <p>Книжный интернет-магазин «Hikanumaru»</p>
+                    <p>«Hikanumaru» – книжный онлайн-магазин, успешно работающий по всей России. В нём вы можете
+                        заказывать
+                        книги в любое время 24 часа в сутки.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/"><ion-icon class="logo" name="logo-youtube"></ion-icon></a>
+                    <a href="https://twitter.com/"><ion-icon class="logo" name="logo-twitter"></ion-icon></a>
+                    <a href="https://www.instagram.com/"><ion-icon class="logo" name="logo-instagram"></ion-icon></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="payment.html">Оплата и доставка</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+
+        <div class="rights">
+            <p>All Rights Reserved 2024</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
